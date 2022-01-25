@@ -8,6 +8,7 @@ if test ! $(which brew); then
   echo "Installing homebrew..."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
+
 brew doctor
 
 brew update
@@ -36,6 +37,6 @@ composer global require laravel/valet --with-all-dependencies
 
 valet install
 
-valet use  $PHP
+valet use $PHP
 
 brew cleanup
