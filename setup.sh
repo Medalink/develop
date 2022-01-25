@@ -11,7 +11,7 @@ brew update
 
 brew install wget
 
-brew install php8.1 php8.1-xml php8.1-exif
+brew install php@8.1
 
 brew install composer
 
