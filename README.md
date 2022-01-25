@@ -60,3 +60,11 @@ Use developer login for now since we do not have Google auth setup for this new 
 You can change the ID to match your typical user ID.
 
 https://archy.test/developer/login/13
+
+
+Brew permission directory fix:
+```bash
+sudo chown -R $(whoami) /usr/local/Homebrew
+sudo chown -R $(whoami) /usr/local/var/homebrew
+sudo chown -R $(whoami) /usr/local/etc/bash_completion.d /usr/local/lib/pkgconfig /usr/local/share/aclocal /usr/local/share/doc /usr/local/share/info /usr/local/share/locale /usr/local/share/man /usr/local/share/man/man1 /usr/local/share/man/man3 /usr/local/share/man/man5 /usr/local/share/man/man7 /usr/local/share/man/man8 /usr/local/share/zsh /usr/local/share/zsh/site-functions /usr/local/var/log /usr/local/Cellar /usr/local/lib
+```
