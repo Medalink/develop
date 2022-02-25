@@ -22,7 +22,7 @@ echo "xcode-select is installed"
 echo "Checking if brew is installed"
 if test ! $(which brew); then
   echo "homebrew (brew) not found. Installing"
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 echo "brew is installed"
 
