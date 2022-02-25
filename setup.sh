@@ -39,6 +39,13 @@ if test ! $(which wget); then
 fi
 echo "wget is installed"
 
+echo "Checking if mysql-client@5.7 is installed"
+if ! brew ls --versions mysql-client@5.7 > /dev/null; then
+  echo "mysql-client@5.7 not found. Installing"
+  brew install mysql-client@5.7
+fi
+echo "mysql-client@5.7 is installed"
+
 echo "Checking if $PHP is installed"
 if brew ls --versions $PHP > /dev/null; then
   echo "$PHP is installed"
